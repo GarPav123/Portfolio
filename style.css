@@ -1,0 +1,372 @@
+/* Reset default styles for ul and li */
+
+body {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+#background-image {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+
+  .logo-main {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+    padding-right:350px;
+    margin-bottom:25px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=ChunkFive&display=swap');
+  #typing-text {
+    font-size: 64px;
+    font-weight: 900;
+    
+    background: linear-gradient(to right, #ffdb7e, #f78154, #ed1c24, #5bc0eb, #482880);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    font-family: 'Monpoly'
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  .typing-container {
+   
+    margin-top:350px;
+    margin-left:170px;
+    margin-right:50px;
+    margin-bottom: 50px;
+  }
+ 
+ 
+  
+  
+  
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul li {
+    margin: 0 10px;
+  }
+  
+  ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul li a:hover {
+    background-color: #2200df;
+    border-radius: 10px;
+  }
+  
+  ul li a.active {
+    background-color: #4CAF50;
+    border-radius: 10px;
+  }
+  .about-me-section {
+    background-color: white;
+    padding: 40px;
+    margin-top: 600px; /* Adjust margin-top to accommodate the navbar */
+    height: calc(100vh - 70px); /* Set the height to fill the remaining viewport */
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 32px; /* Increase the font size as desired */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px; /* Increase the font size as desired */
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .image-container {
+    padding-right: 20px; /* Adjust the padding as needed */
+  }
+  
+  .text-container {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3edf7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    padding-left:5px;
+    padding-right:5px;
+  }
+  
+  .social-icons a {
+    transition: transform 0.5s;
+  }
+  
+  .social-icons a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+    -0.5px -0.5px 0px rgba(255,255,255,1),
+    0.5px 0.5px 0px rgba(0,0,0,0.15),
+    0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
+  }
+  
+  .social-icons img {
+    width: 50px; 
+    height: 50px; 
+  } 
+  .projects-section {
+    
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .projects-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as desired */
+    display: flex;
+    justify-content: center; /* Center the project boxes horizontally */
+    flex-wrap: wrap;
+  }
+  
+  .project-box {
+    flex: 0 0 calc(30% - 20px); /* Decrease the percentage value to reduce the width */
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: calc(80vh - 100px); /* Set the height to 100% */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s, box-shadow 0.3s;
+   
+  }
+  .project-box:hover {
+    border-color: #2200df; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  }
+  .project-carousel img {
+    /* Adjust the size and positioning of the image */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  .project-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding:20px;
+  }
+  .projects-section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .skills-section {
+    background-image:url("pexels-james-wheeler-1519088.jpg") ;
+    padding: 40px;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-box {
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    text-align: center;
+    flex: 1 0 ;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+  }
+  
+  .skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .percentage {
+    font-size: 18px;
+    padding-top:12px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
+  
+  
+  
+  .skill-box.logo-icon-skills {
+    width:48px;
+    height:48px;
+  }
+  .mainres {
+    background: linear-gradient(to bottom right, #09dae9, #8144e2);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .headingcred {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .link-component {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .link-component p {
+    margin-right: 10px;
+  }
+  
+  .link-component a {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .link-component a:hover {
+    background-color: #dddddd;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #dddddd;
+
+  }
+
+  .link-component p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+  }
+  .headingcred{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .text-container p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:24px;
+  }
+  
+  
+  
+  
+
+  
+  
